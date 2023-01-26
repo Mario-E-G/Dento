@@ -1,0 +1,338 @@
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+.headerSection {
+  background-color: rgb(244, 244, 244);
+  padding: 10px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  font-size: 12px;
+}
+
+.topIcons i {
+  color: rgb(112, 112, 112);
+  font-weight: 400;
+  font-size: 14px;
+  padding: 5px;
+}
+.topIcons i:hover {
+  color: rgb(0, 174, 239);
+}
+
+.header a {
+  padding: 5px;
+  text-align: center;
+  color: #707070;
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+.header a:hover {
+  color: #707070;
+}
+.nav-item {
+  color: #232323 !important;
+  padding: 0 15px;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.locationIcon i,
+.envelopeIcon i {
+  color: rgb(0, 174, 239);
+}
+.dento-btn {
+  color: #fff !important;
+  font-weight: 600;
+  min-width: 140px;
+  height: 40px;
+  line-height: 36px;
+  font-size: 12px;
+  background-color: rgb(0, 174, 239) !important;
+  /* text-align: center; */
+  transition: all 1s !important;
+}
+
+.dento-trans-btn {
+  color: rgb(0, 173, 238) !important;
+  font-weight: 600;
+  min-width: 140px;
+  height: 40px;
+  line-height: 36px;
+  font-size: 12px;
+  border: 1px solid rgb(0, 173, 238) !important;
+  background-color: transparent !important;
+}
+
+.dento-btn:hover {
+  color: rgb(0, 173, 238) !important;
+  border: 1px solid rgb(0, 173, 238) !important;
+  background-color: transparent !important;
+}
+
+nav {
+  background-color: #fff;
+  z-index: 999999;
+}
+
+.sticky {
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+}
+
+.tooltip-inner {
+  max-width: 200px;
+  padding: 0.25rem 0.5rem;
+  color: #fff;
+  text-align: center;
+  background-color: #000;
+  border-radius: 0.25rem;
+  display: none;
+}
+#navContainer {
+  padding: 15px;
+}
+
+#navContainer a img {
+  width: 100%;
+}
+
+.bg-img {
+  background-image: url(./img/1.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 150px 0px;
+  position: relative;
+  opacity: 1;
+  /* height: 800px; */
+  z-index: 999;
+}
+.background-div {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(52, 62, 92, 0.9);
+  pointer-events: none;
+  z-index: -100;
+  /* opacity: 0.5; */
+}
+
+.bg-img h2 {
+  font-size: 55px;
+  color: #fff;
+  margin-bottom: 30px;
+  display: block;
+  text-transform: capitalize;
+  opacity: 1;
+}
+.bg-img p {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 40px;
+  opacity: 1;
+}
+.divcolor {
+  background-color: rgb(0, 173, 238);
+  width: 80px;
+  height: 5px;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.header-aboutus {
+  padding-bottom: 40px;
+}
+.progress {
+  margin-bottom: 20px;
+  width: 100%;
+}
+.progress-bar {
+  background-color: rgb(0, 173, 238) !important;
+}
+.before-progress {
+  font-size: 20px;
+  font-weight: bold;
+}
+.paragraph-aboutus {
+  margin-bottom: 3rem;
+}
+.content-aboutus {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#hr {
+  opacity: 0.1 !important;
+}
+#iconSection {
+  margin-top: 60px;
+}
+.icon-section .spani {
+  font-size: 50px;
+  color: rgb(0, 173, 238);
+}
+
+/* .bg-img::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: #2c455d;
+  background: linear-gradient(to right, #2c455d, #00012c);
+  opacity: 0.85;
+} */
+
+.bg-img2 {
+  background-image: url(./img/13.jpg);
+  /* background-position: center center; */
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 120px 0px;
+  position: relative;
+  opacity: 1;
+  z-index: 999;
+}
+.bg-img2 h1, .bg-img2 h6,.bg-img3 h1{
+  color: #fff;
+}
+
+.bg-img3 {
+  background-image: url(./img/12.jpg);
+  /* background-position: center center; */
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 120px 0px;
+  position: relative;
+  opacity: 1;
+  z-index: 999;
+}
+.our-service-video {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#video-dento-play {
+  position: absolute;
+  color: white;
+  width: 60px;
+  height: 60px;
+  background-color: #00aeef;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  margin-top: -30px;
+  margin-left: -30px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 20px;
+}
+.our-service-icons {
+  margin: 15px;
+  text-align: center;
+}
+.our-service-icons-img {
+  padding-bottom: 15px;
+  /* text-align: center; */
+}
+.pricing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.divcolor-center {
+  background-color: rgb(0, 173, 238);
+  width: 50px;
+  height: 5px;
+  margin: 0.5rem;
+}
+
+tr > th {
+  padding: 10px 15px;
+  background-color: #00aeef !important;
+  border: 4px solid #ffffff !important;
+  color: #fff;
+}
+
+tr > td {
+  padding: 10px 15px !important;
+  border-radius: 3px;
+  border: 4px solid #ffffff !important;
+  background-color: #f4f4f4 !important;
+  font-weight: 600;
+  color: #707070;
+}
+.table-row {
+  padding-bottom: 20px;
+}
+.table-section {
+  padding-bottom: 100px;
+}
+.dento-btn i {
+  font-size: 10px;
+}
+.form-control,
+.form-select {
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  border: none;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 0 30px;
+  font-style: italic;
+}
+#textarea {
+  padding: 30px;
+  height: 120px;
+}
+@media screen and (max-width: 767.5px) {
+  .header span {
+    display: none;
+  }
+  #navContainer {
+    flex-wrap: nowrap !important;
+  }
+  .bg-img h2 {
+    font-size: 25px;
+  }
+  .bg-img p {
+    font-size: 16px;
+  }
+  .div-img {
+    padding-bottom: 50px;
+    width: 100%;
+  }
+  .icon-section {
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .div-img {
+    width: 100%;
+  }
+}
