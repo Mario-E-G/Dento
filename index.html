@@ -30,6 +30,11 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body onscroll="appendClass()">
     <div class="headerSection">
@@ -39,16 +44,23 @@
             class="w-100 col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 d-flex justify-content-between text-center"
           >
             <div class="header">
-              <a href="#" class="locationIcon" onmouseover="appendTipTool()"
-                ><i class="fa-solid fa-location-dot"></i>
-                <span>28 Jackson Street, Chicago, 7788569 USA</span>
-                <span class="tooltip-inner"
-                  >28 Jackson Street, Chicago, 7788569 USA</span
-                >
+              <a href="#" class="locationIcon">
+                <i class="fa-solid fa-location-dot"></i>
+                <span class="headerMainSpan">
+                  28 Jackson Street, Chicago, 7788569 USA
+                  <span class="tooltip-inner">
+                    28 Jackson Street, Chicago, 7788569 USA
+                  </span>
+                </span>
               </a>
               <a href="#" class="envelopeIcon"
                 ><i class="fa-regular fa-envelope"></i>
-                <span>info.dento@gmail.com</span>
+                <span class="headerMainSpanEmail"
+                  >example.dento@gmail.com
+                  <span class="tooltip-inner"
+                    >example.dento@gmail.com</span
+                  ></span
+                >
               </a>
             </div>
             <div class="topIcons">
@@ -65,26 +77,20 @@
 
     <nav class="navbar navbar-expand-lg">
       <div class="container" id="navContainer">
-        <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="Logo" /></a>
+        <a class="navbar-brand" href="#"
+          ><img src="./img/logo.png" alt="Logo"
+        /></a>
         <div class="collapse navbar-collapse" id="navbarScroll">
           <ul
-            class="navbar-nav m-auto my-2 my-lg-0 navbar-nav-scroll"
+            class="navbar-nav m-auto my-2 my-lg-0 navbar-nav-scroll ulNav"
             style="--bs-scroll-height: 100px"
           >
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">HOME</a>
             </li>
             <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle active"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                PAGES
-              </a>
-              <ul class="dropdown-menu">
+              <a class="nav-link dropdown-toggle active page" href="#">PAGES</a>
+              <ul class="dropdown-menu ulInPage">
                 <li><a class="dropdown-item" href="#">Action</a></li>
                 <li><a class="dropdown-item" href="#">Another action</a></li>
                 <li><hr class="dropdown-divider" /></li>
@@ -97,22 +103,14 @@
               <a class="nav-link active" href="#">ABOUT</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active">SERVICE</a>
+              <a class="nav-link active" href="#">SERVICE</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active">PRICING</a>
+              <a class="nav-link active" href="#">PRICING</a>
             </li>
             <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle active"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                BLOG
-              </a>
-              <ul class="dropdown-menu">
+              <a class="nav-link dropdown-toggle active blog" href="#">BLOG</a>
+              <ul class="dropdown-menu ulInBlog">
                 <li><a class="dropdown-item" href="#">Action</a></li>
                 <li><a class="dropdown-item" href="#">Another action</a></li>
                 <li><hr class="dropdown-divider" /></li>
@@ -122,15 +120,14 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link active">CONTACT</a>
+              <a class="nav-link active" href="#">CONTACT</a>
             </li>
           </ul>
         </div>
         <a href="#" class="btn dento-btn">Booking Now</a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler navBtn"
           type="button"
-          data-bs-toggle="collapse"
           data-bs-target="#navbarScroll"
           aria-controls="navbarScroll"
           aria-expanded="false"
@@ -138,6 +135,54 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+      </div>
+      <div class="sideMenu w-100">
+        <ul
+          class="navbar-nav m-auto my-2 my-lg-0 navbar-nav-scroll ulNav"
+          style="--bs-scroll-height: inherit"
+        >
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active page" href="#">PAGES</a>
+            <ul class="dropdown-menu ulInPage">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Another action</a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">SERVICE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">PRICING</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active blog" href="#">BLOG</a>
+            <ul class="dropdown-menu ulInBlog">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Another action</a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">CONTACT</a>
+          </li>
+        </ul>
       </div>
     </nav>
 
@@ -255,21 +300,21 @@
           <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 text-center">
             <div class="icon-section">
               <span class="spani"><i class="fa-brands fa-react"></i></span>
-              <h2>20</h2>
+              <h2 class="counter">20</h2>
               <span>Years Of Experience</span>
             </div>
           </div>
           <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 text-center">
             <div class="icon-section">
               <span class="spani"><i class="fa-regular fa-heart"></i></span>
-              <h2>700+</h2>
+              <h2 class="counter">700+</h2>
               <span>Happy Patients </span>
             </div>
           </div>
           <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 text-center">
             <div class="icon-section">
               <span class="spani"><i class="fa-solid fa-book"></i></span>
-              <h2>120</h2>
+              <h2 class="counter">120</h2>
               <span>Certificate</span>
             </div>
           </div>
@@ -278,7 +323,7 @@
               <span class="spani"
                 ><i class="fa-regular fa-address-card"></i
               ></span>
-              <h2>40+</h2>
+              <h2 class="counter">40+</h2>
               <span>Dentist</span>
             </div>
           </div>
