@@ -22,7 +22,7 @@ var sideMenu = document.querySelector(".sideMenu");
 // });
 
 function appendClass() {
-  console.log(sticky);
+  // console.log(sticky);
   if (window.scrollY >= sticky) {
     nav.classList.add("sticky");
     // sideMenu.style.display = "none"
@@ -56,7 +56,6 @@ $(document).ready(function () {
   $(".page").click(function () {
     $(".ulInPage").slideToggle(500);
   });
-
   $(".blog").click(function () {
     $(".ulInBlog").slideToggle(500);
   });
