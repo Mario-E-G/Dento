@@ -10,6 +10,9 @@
 body {
   position: relative;
 }
+.counterplus{
+  font-size: 30px;
+}
 .header {
   display: flex;
   align-items: center;
@@ -345,6 +348,9 @@ tr > td {
   }
   .icon-section {
     padding-bottom: 40px;
+  }
+  .counterplus{
+    font-size: 20px;
   }
 }
 
