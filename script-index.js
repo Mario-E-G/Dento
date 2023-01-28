@@ -63,8 +63,8 @@ document.getElementById("card2").addEventListener("mouseover", function () {
 });
 
 document.getElementById("card3").addEventListener("mouseover", function () {
-  document.querySelector("#SM3").style.visibility = "visible";
-  document.querySelector("#SM3").style.opacity = "1";
+document.querySelector("#SM3").style.visibility = "visible";
+document.querySelector("#SM3").style.opacity = "1";
 });
 document.getElementById("card1").addEventListener("mouseleave", function () {
   document.querySelector("#SM1").style.visibility = "hidden";
@@ -81,10 +81,16 @@ document.getElementById("card3").addEventListener("mouseleave", function () {
   document.querySelector("#SM3").style.opacity = "0";
 });
 
+var cards = document.getElementsByClassName("section1");
+
+
+
+
 $(document).ready(function () {
   $(".page").click(function () {
     $(".ulInPage").slideToggle(500);
   });
+
   $(".blog").click(function () {
     $(".ulInBlog").slideToggle(500);
   });
