@@ -52,6 +52,35 @@ headerMainSpanEmail.addEventListener("mouseleave", () => {
   headerToolTipSpanEmail.style.display = "none";
 });
 
+document.getElementById("card1").addEventListener("mouseover", function () {
+  document.querySelector("#SM1").style.visibility = "visible";
+  document.querySelector("#SM1").style.opacity = "1";
+});
+
+document.getElementById("card2").addEventListener("mouseover", function () {
+  document.querySelector("#SM2").style.visibility = "visible";
+  document.querySelector("#SM2").style.opacity = "1";
+});
+
+document.getElementById("card3").addEventListener("mouseover", function () {
+  document.querySelector("#SM3").style.visibility = "visible";
+  document.querySelector("#SM3").style.opacity = "1";
+});
+document.getElementById("card1").addEventListener("mouseleave", function () {
+  document.querySelector("#SM1").style.visibility = "hidden";
+  document.querySelector("#SM1").style.opacity = "0";
+});
+
+document.getElementById("card2").addEventListener("mouseleave", function () {
+  document.querySelector("#SM2").style.visibility = "hidden";
+  document.querySelector("#SM2").style.opacity = "0";
+});
+
+document.getElementById("card3").addEventListener("mouseleave", function () {
+  document.querySelector("#SM3").style.visibility = "hidden";
+  document.querySelector("#SM3").style.opacity = "0";
+});
+
 $(document).ready(function () {
   $(".page").click(function () {
     $(".ulInPage").slideToggle(500);
