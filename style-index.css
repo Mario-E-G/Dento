@@ -529,3 +529,53 @@ form button:hover {
     width: 100%;
   }
 }
+
+/* =======================================================Youssef==================================================== */
+.bg-image {
+  background-image: url(img/12.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backdrop-filter: opacity(0.5);
+  height: 200px;
+  position: relative;
+}
+
+.mask {
+  background-image: linear-gradient(
+    to right,
+    rgba(44, 69, 93, 0.85),
+    rgba(0, 1, 44, 0.85)
+  );
+  /* opacity: 0.85; */
+}
+
+ol a {
+  text-decoration: none !important;
+  color: black !important;
+}
+.get-in::after {
+  content: " ";
+  margin-top: 0.8em;
+  width: 2em;
+  height: 0.15em;
+  background-color: #00aeef;
+  display: block;
+}
+
+.btn-primary {
+  background-color: #00aeef !important;
+}
+
+.btn-primary:hover {
+  color: #00aeef !important;
+  background-color: white !important;
+  border-color: #00aeef !important;
+}
+
+.bg-color {
+  background-color: #00aeef !important;
+  color: white;
+}
+
+/* =======================================================Youssef==================================================== */

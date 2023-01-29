@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dento - Dentist & Medical</title>
+    <link rel="icon" href="./img/favicon (1).png" />
+    <link rel="stylesheet" href="./style-index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.2.3-dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body onscroll="appendClass()">
+    <div class="headerSection">
+      <div class="container topHeader">
+        <div class="row">
+          <div
+            class="w-100 col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 d-flex justify-content-between text-center"
+          >
+            <div class="header">
+              <a href="#" class="locationIcon">
+                <i class="fa-solid fa-location-dot"></i>
+                <span class="headerMainSpan">
+                  28 Jackson Street, Chicago, 7788569 USA
+                  <span class="tooltip-inner">
+                    28 Jackson Street, Chicago, 7788569 USA
+                  </span>
+                </span>
+              </a>
+              <a href="#" class="envelopeIcon"
+                ><i class="fa-regular fa-envelope"></i>
+                <span class="headerMainSpanEmail"
+                  >example.dento@gmail.com
+                  <span class="tooltip-inner"
+                    >example.dento@gmail.com</span
+                  ></span
+                >
+              </a>
+            </div>
+            <div class="topIcons">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================================================================Youssef====================================================== -->
+    <nav class="navbar navbar-expand-lg" style="z-index: 1">
+      <div class="container" id="navContainer">
+        <a class="navbar-brand" href="#"
+          ><img src="./img/logo.png" alt="Logo"
+        /></a>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul
+            class="navbar-nav m-auto my-2 my-lg-0 navbar-nav-scroll ulNav"
+            style="--bs-scroll-height: 100px"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >HOME</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active page" href="#">PAGES</a>
+              <ul class="dropdown-menu ulInPage">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">SERVICE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">PRICING</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active blog" href="#">BLOG</a>
+              <ul class="dropdown-menu ulInBlog">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact-us.html">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+
+        <button
+          class="btn dento-btn btn-primary"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight"
+        >
+          Booking Now
+        </button>
+
+        <button
+          class="navbar-toggler navBtn"
+          type="button"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="sideMenu w-100">
+        <ul
+          class="navbar-nav m-auto my-2 my-lg-0 navbar-nav-scroll ulNav"
+          style="--bs-scroll-height: inherit"
+        >
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html"
+              >HOME</a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active page" href="#">PAGES</a>
+            <ul class="dropdown-menu ulInPage">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Another action</a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">SERVICE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">PRICING</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active blog" href="#">BLOG</a>
+            <ul class="dropdown-menu ulInBlog">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Another action</a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contact-us.html">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div
+      class="offcanvas offcanvas-end overflow-auto"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title get-in" id="offcanvasRightLabel">
+          Booking Now
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <form class="p-3">
+        <label class="form-label">Enter your Email</label>
+        <input
+          type="email"
+          class="form-control p-3 mb-2"
+          id="exampleInputPassword1"
+          placeholder="example@gmail.com"
+        />
+
+        <label class="form-label">Select the doctor you Want</label>
+        <select class="form-select mb-2" aria-label="Default select example">
+          <option selected>Open this select menu</option>
+          <option value="1">Dr, Youssef</option>
+          <option value="2">Dr, Mario</option>
+          <option value="3">Dr, Attar</option>
+          <option value="4">Dr, Aldghar</option>
+        </select>
+
+        <label class="form-label">Reservation Date</label>
+        <input
+          type="datetime-local"
+          class="form-control p-3"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+          placeholder="Your Name"
+        />
+        <div class="input-group my-5">
+          <textarea
+            class="form-control"
+            aria-label="With textarea"
+            placeholder="Your Message"
+            rows="4"
+          ></textarea>
+        </div>
+        <button
+          type="submit"
+          class="btn btn-primary py-2 px-5 w-100 text-center"
+        >
+          Book now
+        </button>
+      </form>
+    </div>
+
+    <!-- ===================================================================Youssef====================================================== -->
+    <div class="text-center bg-image">
+      <div class="mask h-100">
+        <div class="d-flex justify-content-center align-items-center h-100">
+          <div class="text-white">
+            <h1>CONTACT</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row pt-4">
+        <nav
+          style="--bs-breadcrumb-divider: '>'; z-index: 1"
+          aria-label="breadcrumb"
+        >
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="index.html"><i class="fa fa-home"></i> Home</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Contact</li>
+          </ol>
+        </nav>
+      </div>
+
+      <div class="row py-4">
+        <div class="col">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d913.251168952798!2d31.171036843930146!3d27.18739897701455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14450bfb7a5cb539%3A0x38d71298729ac58a!2z2KzYp9mF2LnYqSDYo9iz2YrZiNi3!5e0!3m2!1sar!2seg!4v1674867652660!5m2!1sar!2seg"
+            height="500px"
+            width="100%"
+            style="border: 0"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+
+      <div class="row py-4 d-flex gap-5">
+        <div
+          class="col-sm-12 col-lg-4 bg-color p-5 rounded-2 d-flex flex-column justify-content-between"
+        >
+          <h5>Address</h5>
+          <p style="max-width: 15em">28 Jackson Street, Chicago, 7788569 USA</p>
+          <h5>Phone</h5>
+          <p>+84. 2252. 2250. 122</p>
+          <h5>Fax</h5>
+          <p>+84. 2252. 2250. 125</p>
+          <h5>Email</h5>
+          <p class="">test@gmail.com</p>
+        </div>
+        <div
+          class="col-sm-12 col-lg-7 d-flex flex-column justify-content-between"
+        >
+          <h2 class="get-in">Get In Touch</h2>
+          <form>
+            <div class="my-4">
+              <div class="row">
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control p-3"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Your Name"
+                  />
+                </div>
+                <div class="col">
+                  <input
+                    type="email"
+                    class="form-control p-3"
+                    id="exampleInputPassword1"
+                    placeholder="Your Email"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="input-group my-5">
+              <textarea
+                class="form-control"
+                aria-label="With textarea"
+                placeholder="Your Message"
+                rows="4"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary py-2 px-5">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-imgFooter mt-5">
+      <div class="container pt-5">
+        <div class="backPhoto"></div>
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+            <div class="footer-first-row">
+              <a href="#"><img src="./img/logo.png.webp" alt="" /></a>
+              <p class="mt-4">
+                Etiam sutor risus, dapibus act elefend katen, lacinia sitamet
+                denim. Mauris sagittis kansa interdum dignissim.
+              </p>
+              <p>
+                <i class="fa-solid fa-location-dot" style="color: #00aeef"></i>
+                28 Jackson Street, Chicago, 7788569 USA
+              </p>
+              <p>
+                <i class="fa-solid fa-phone" style="color: #00aeef"></i> +84.
+                2252. 2250. 122
+              </p>
+              <p>
+                <i class="fa-solid fa-envelope" style="color: #00aeef"></i>
+                info.dento@gmail.com
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+            <div class="footer-openhours text-center">
+              <h5 class="text-center">Opening Hours</h5>
+              <ul class="footer-openhours-ul">
+                <li>
+                  <span>Mon-Wed</span>
+                  <span>8.00-18.00</span>
+                </li>
+                <li>
+                  <span>Thu-Fri</span>
+                  <span>8.00-17.00</span>
+                </li>
+                <li>
+                  <span>Sat</span>
+                  <span>9.00-17.00</span>
+                </li>
+                <li>
+                  <span>Sun</span>
+                  <span>10.00-17.00</span>
+                </li>
+                <li>
+                  <span>Holiday</span>
+                  <span>Closed</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+            <div class="footer-openhours w-100 text-center">
+              <h5 class="text-center">Quick Link</h5>
+              <ul class="footer-openhours-ul">
+                <li>
+                  <span><a href="#">About</a></span>
+                  <span><a href="#">FAQs</a></span>
+                </li>
+                <li>
+                  <span><a href="#">Contact</a></span>
+                  <span><a href="#">Policy</a></span>
+                </li>
+                <li>
+                  <span><a href="#">News</a></span>
+                  <span><a href="#">Advisors</a></span>
+                </li>
+                <li>
+                  <span><a href="#">Carrers</a></span>
+                  <span><a href="#">Dentist</a></span>
+                </li>
+                <li>
+                  <span><a href="#">Services</a></span>
+                  <span><a href="#">Legals</a></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+            <div class="footer-openhours w-100 text-center">
+              <h5 class="text-center">Quick Link</h5>
+              <p>
+                We will send out weekly newest article and some great offers
+              </p>
+              <form action="#" class="footer-form">
+                <input
+                  class="form-control d-inline-block w-75"
+                  type="text"
+                  placeholder="Email Address"
+                /><button class="btn btn-primary" type="submit">
+                  <i class="fa-solid fa-paper-plane"></i>
+                </button>
+              </form>
+              <div class="footer-icons">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="row">
+          <div class="col-12">
+            <div class="copyrit">
+              <p class="text-center align-items-end">
+                Copyright ©2023 All rights reserved | This template is made with
+                <i class="fa-regular fa-heart"></i> by Colorlib
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      var date = document.getElementById("exampleInputEmail1");
+      var currentTime = new Date();
+      currentTime.setHours(currentTime.getHours() + 2);
+      date.min = currentTime.toISOString().substring(0, 16);
+      date.value = currentTime.toISOString().substring(0, 16);
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script-index.js"></script>
+  </body>
+</html>
