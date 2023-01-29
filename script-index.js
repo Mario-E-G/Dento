@@ -10,27 +10,15 @@ var navBtn = document.querySelector(".navBtn");
 var sideMenu = document.querySelector(".sideMenu");
 var cards = document.getElementsByClassName("section1");
 
-// const body = document.body;
-// console.log(body);
-
-// body.addEventListener("scroll", () => {
-//   console.log(sticky);
-//   if (window.scrollY >= sticky) {
-//     nav.classList.add("sticky");
-//   } else {
-//     nav.classList.remove("sticky");
-//   }
-// });
 
 function appendClass() {
-  // console.log(sticky);
   if (window.scrollY >= sticky) {
     nav.classList.add("sticky");
-    // sideMenu.style.display = "none"
   } else {
     nav.classList.remove("sticky");
   }
 }
+
 
 function move() {
   var a = document.createElement("a");
@@ -39,10 +27,6 @@ function move() {
   goTo(a);
 }
 
-// navBtn.addEventListener("click", () => {
-//   sideMenu.classList.toggle("showContainer");
-//   sideMenu.style.transition = "2s";
-// });
 
 headerMainSpan.addEventListener("mouseenter", () => {
   headerToolTipSpan.style.display = "block";
