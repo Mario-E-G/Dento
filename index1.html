@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dento - Dentist & Medical</title>
+    <link rel="icon" href="./img/favicon (1).png" />
+    <link rel="stylesheet" href="./style-index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.2.3-dist/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="blogStyle.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body onscroll="appendClass()">
+    <div class="headerSection">
+      <div class="container topHeader">
+        <div class="row">
+          <div
+            class="w-100 col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 d-flex justify-content-between text-center"
+          >
+            <div class="header">
+              <a href="#" class="locationIcon">
+                <i class="fa-solid fa-location-dot"></i>
+                <span class="headerMainSpan">
+                  28 Jackson Street, Chicago, 7788569 USA
+                  <span class="tooltip-inner">
+                    28 Jackson Street, Chicago, 7788569 USA
+                  </span>
+                </span>
+              </a>
+              <a href="#" class="envelopeIcon"
+                ><i class="fa-regular fa-envelope"></i>
+                <span class="headerMainSpanEmail"
+                  >example.dento@gmail.com
+                  <span class="tooltip-inner"
+                    >example.dento@gmail.com</span
+                  ></span
+                >
+              </a>
+            </div>
+            <div class="topIcons">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg">
+      <div class="container" id="navContainer">
+        <a class="navbar-brand" href="#"
+          ><img src="./img/logo.png" alt="Logo"
+        /></a>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul
+            class="navbar-nav m-auto my-2 my-lg-0 navbar-nav-scroll ulNav"
+            style="--bs-scroll-height: 100px"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">HOME</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active page" href="#">PAGES</a>
+              <ul class="dropdown-menu ulInPage">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">SERVICE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">PRICING</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active blog" href="#">BLOG</a>
+              <ul class="dropdown-menu ulInBlog">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+        <a href="#" class="btn dento-btn">Booking Now</a>
+        <button
+          class="navbar-toggler navBtn"
+          type="button"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="sideMenu w-100">
+        <ul
+          class="navbar-nav m-auto my-2 my-lg-0 navbar-nav-scroll ulNav"
+          style="--bs-scroll-height: inherit"
+        >
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active page" href="#">PAGES</a>
+            <ul class="dropdown-menu ulInPage">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Another action</a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">SERVICE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">PRICING</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active blog" href="#">BLOG</a>
+            <ul class="dropdown-menu ulInBlog">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Another action</a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="bg-img" id="bg_section">
+      <div class="row h-100">
+          <div class="background-div"></div>
+          <div id="blogDiv" class="col-12">
+              <h1 class="blogtxt">BLOG</h1>
+          </div>
+      </div>
+</section>
+<section>
+  <div class="container h-100">
+      <div class="row" style="height: 50px; margin-left: 25px;">
+          <div class="col-12 d-flex align-items-center" id="currlocation">
+              <i class="fa fa-home" id="Hicon"></i>
+
+             <p style="margin-left: 5px; margin-top: 20px; ">Home > Blog</p>
+              
+          </div>
+      </div>
+      <div class="row" style="margin-top: 50px;" >
+          <div class="col-12 col-lg-8 d-flex flex-column h-50 ">
+              <div class="col12" id="bloglt">
+                  <div id="img1div">
+                      <img src="img/16.jpg.webp" alt="" style="width: 100%; ">
+                  </div>
+                  <div class="d-flex flex-column justify-content-center" id="txt1div">
+                      <h3>How your mouth bacteria can harm your lungs</h3>
+                      <p>Donec tempor, lorem et euismod eleifend, est lectus laoreet ante, sed accusan justo diam nec tincidunt interdum ante consectetur dapibus molestie ...</p>
+                      <div class="d-flex justify-content-evenly" style="width: 80% ;">
+                          <i class="fa-regular fa-clock"></i> <p> 28 Sep 2018 </p>
+                          <i class="fa-regular fa-comment"></i> <p> 3 Comments</p>
+                      </div>
+                  </div>
+              </div>
+
+                  <div class="col12" id="bloglt">
+
+                      <div id="img1div">
+                          <img src="img/17.jpg.webp" alt="" style="width: 100%; ">
+                      </div>
+                      <div class="d-flex flex-column justify-content-center" id="txt1div">
+                          <h3>What is the best kind of toothpaste to use?</h3>
+                          <p>Donec tempor, lorem et euismod eleifend, est lectus laoreet ante, sed accusan justo diam nec tincidunt interdum ante consectetur dapibus molestie ...</p>
+                          <div class="d-flex justify-content-evenly" style="width: 80% ;">
+                          <i class="fa-regular fa-clock"></i> <p> 28 Sep 2018 </p>
+                          <i class="fa-regular fa-comment"></i> <p> 3 Comments</p>
+                      </div>
+                  </div>
+
+              </div>
+
+             <div class="col12" id="bloglt" >
+              <div id="img1div">
+                  <img src="img/18.jpg.webp" alt="" style="width: 100%; ">
+              </div>
+              <div class="d-flex flex-column justify-content-center" id="txt1div">
+                  <h3>Why you should avoid sipping your drinks</h3>
+                  <p>Donec tempor, lorem et euismod eleifend, est lectus laoreet ante, sed accusan justo diam nec tincidunt interdum ante consectetur dapibus molestie ...</p>
+                  <div class="d-flex justify-content-evenly" style="width: 80% ;">
+                      <i class="fa-regular fa-clock"></i> <p> 28 Sep 2018 </p>
+                      <i class="fa-regular fa-comment"></i> <p> 3 Comments</p>
+                  </div>
+              </div>
+             </div>
+
+             <div class="col12" id="bloglt" >
+              <div id="img1div">
+                  <img src="img/19.jpg.webp" alt="" style="width: 100%; ">
+              </div>
+              <div class="d-flex flex-column justify-content-center" id="txt1div">
+                  <h3>How long does numbness last after the dentist?</h3>
+                  <p>Donec tempor, lorem et euismod eleifend, est lectus laoreet ante, sed accusan justo diam nec tincidunt interdum ante consectetur dapibus molestie ...</p>
+                  <div class="d-flex justify-content-evenly" style="width: 80% ;">
+                      <i class="fa-regular fa-clock"></i> <p> 28 Sep 2018 </p>
+                      <i class="fa-regular fa-comment"></i> <p> 3 Comments</p>
+                  </div>
+              </div>
+             </div>
+
+             <div class="col12" id="bloglt" >
+              <div id="img1div">
+                  <img src="img/20.jpg.webp" alt="" style="width: 100%; ">
+              </div>
+              <div class="d-flex flex-column justify-content-center" id="txt1div">
+                  <h3>Lie bumps (transient lingual papillitis): What to know</h3>
+                  <p>Donec tempor, lorem et euismod eleifend, est lectus laoreet ante, sed accusan justo diam nec tincidunt interdum ante consectetur dapibus molestie ...</p>
+                  <div class="d-flex justify-content-evenly" style="width: 80% ;">
+                      <i class="fa-regular fa-clock"></i> <p> 28 Sep 2018 </p>
+                      <i class="fa-regular fa-comment"></i> <p> 3 Comments</p>
+                  </div>
+              </div>
+             </div>
+          </div>
+
+          <div class="col-12 col-lg-4 d-flex flex-column h-50"   >
+              <div class="col12" style="height: 100px;">
+                  <input id="search" type="search" placeholder="Search">
+              </div>
+              <div class="col12" id="blogrt">
+                  <div class="single-widget-area catagories-widget">
+                      <h3 id="ctg" class="widget-title">Categories</h3>
+                      <ul class="catagories-list">
+                          <li>Dentistry Articles</li>
+                          <hr>
+                          <li>Oral Health</li>
+                          <hr>
+                          <li>Dental Technology</li>
+                          <hr>
+                          <li>Kids Care Dental</li>
+                          <hr>
+                          <li>Healthy Smiles, Inside &amp; Out</li>
+                      </ul>
+                  </div>
+
+              </div>
+              <div class="col-12" id="blogrt" style="height: 450px;">
+                  <h3 id="ctg">Recent News</h3>
+                  <div id="newsBigDiv" class="col-12" style="margin-top: 30px;">
+                      <div class="d-flex justify-content-evenly" id="newsDiv" style="height: 30%;">
+                          <div style="width: 30%;">
+                              <img  src="img/21.jpg.webp" alt="" style="width: 100%;">
+                          </div>
+                          <div class="d-flex flex-column" style="width: 65%;">
+                              <h5>Tooth decay: why good dental hygiene is important</h3>
+                              <span class="post-date" style="font-size: 12px;">28 Sep 2018</span>
+                          </div>
+                      </div>
+                      <div id="newsDiv" class="d-flex justify-content-evenly" style="height: 30%;">
+                          <div style="width: 30%;">
+                              <img  src="img/22.jpg.webp" alt="" style="width: 100%;">
+                          </div>
+                          <div class="d-flex flex-column" style="width: 65%;">
+                              <h5>Six reasons your breath might smell like poop</h3>
+                              <span class="post-date" style="font-size: 12px;">28 Sep 2018</span>
+                          </div>
+                      </div>
+                      <div id="newsDiv" class="d-flex justify-content-evenly" style="height: 30%;">
+                          <div style="width: 30%;">
+                              <img  src="img/23.jpg.webp" alt="" style="width: 100%;">
+                          </div>
+                          <div class="d-flex flex-column" style="width: 65%;">
+                              <h5>Everything you need to know about sinus infection</h3>
+                              <span class="post-date" style="font-size: 12px;">28 Sep 2018</span>
+                          </div>
+                      </div>
+                  </div>                  
+              </div>
+              <div class="col12" id="blogrt">
+                  <div style="height: 80%; margin-top: 50px; width: 100%;">
+                      <img src="img/adds.png.webp" alt="" style="width: 100%; height: 100%;">
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+    <footer class="bg-imgFooter mt-5">
+      <div class="container pt-5">
+        <div class="backPhoto"></div>
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+            <div class="footer-first-row">
+              <a href="#"><img src="./img/logo.png.webp" alt="" /></a>
+              <p class="mt-4">
+                Etiam sutor risus, dapibus act elefend katen, lacinia sitamet
+                denim. Mauris sagittis kansa interdum dignissim.
+              </p>
+              <p>
+                <i class="fa-solid fa-location-dot" style="color: #00aeef"></i>
+                28 Jackson Street, Chicago, 7788569 USA
+              </p>
+              <p>
+                <i class="fa-solid fa-phone" style="color: #00aeef"></i> +84.
+                2252. 2250. 122
+              </p>
+              <p>
+                <i class="fa-solid fa-envelope" style="color: #00aeef"></i>
+                info.dento@gmail.com
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+            <div class="footer-openhours text-center">
+              <h5 class="text-center">Opening Hours</h5>
+              <ul class="footer-openhours-ul">
+                <li>
+                  <span>Mon-Wed</span>
+                  <span>8.00-18.00</span>
+                </li>
+                <li>
+                  <span>Thu-Fri</span>
+                  <span>8.00-17.00</span>
+                </li>
+                <li>
+                  <span>Sat</span>
+                  <span>9.00-17.00</span>
+                </li>
+                <li>
+                  <span>Sun</span>
+                  <span>10.00-17.00</span>
+                </li>
+                <li>
+                  <span>Holiday</span>
+                  <span>Closed</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+            <div class="footer-openhours w-100 text-center">
+              <h5 class="text-center">Quick Link</h5>
+              <ul class="footer-openhours-ul">
+                <li>
+                  <span><a href="#">About</a></span>
+                  <span><a href="#">FAQs</a></span>
+                </li>
+                <li>
+                  <span><a href="#">Contact</a></span>
+                  <span><a href="#">Policy</a></span>
+                </li>
+                <li>
+                  <span><a href="#">News</a></span>
+                  <span><a href="#">Advisors</a></span>
+                </li>
+                <li>
+                  <span><a href="#">Carrers</a></span>
+                  <span><a href="#">Dentist</a></span>
+                </li>
+                <li>
+                  <span><a href="#">Services</a></span>
+                  <span><a href="#">Legals</a></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+            <div class="footer-openhours w-100 text-center">
+              <h5 class="text-center">Quick Link</h5>
+              <p>
+                We will send out weekly newest article and some great offers
+              </p>
+              <form action="#" class="footer-form">
+                <input
+                  class="form-control d-inline-block w-75"
+                  type="text"
+                  placeholder="Email Address"
+                /><button class="btn btn-primary" type="submit">
+                  <i class="fa-solid fa-paper-plane"></i>
+                </button>
+              </form>
+              <div class="footer-icons">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="row">
+          <div class="col-12">
+            <div class="copyrit">
+              <p class="text-center align-items-end">
+                Copyright ©2023 All rights reserved | This template is made with
+                <i class="fa-regular fa-heart"></i> by Colorlib
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script-index.js"></script>
+  </body>
+</html>
