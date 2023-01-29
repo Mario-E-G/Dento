@@ -3,6 +3,8 @@
   font-family: "Inter", sans-serif;
   font-family: "Roboto", sans-serif;
 }
+/* =======================================================Header==================================================== */
+
 .headerSection {
   background-color: rgb(244, 244, 244);
   padding: 10px;
@@ -147,7 +149,9 @@ nav {
 #navContainer a img {
   width: 100%;
 }
+/* =======================================================End Header==================================================== */
 
+/* =======================================================Section1==================================================== */
 .bg-img {
   background-image: url(./img/1.jpg);
   background-position: center center;
@@ -194,6 +198,9 @@ nav {
   display: inline-block;
   margin-bottom: 2rem;
 }
+/* =======================================================End Section1==================================================== */
+
+/* =======================================================Section2==================================================== */
 
 .header-aboutus {
   padding-bottom: 40px;
@@ -243,6 +250,9 @@ nav {
 .bg-img3 h1 {
   color: #fff;
 }
+/* =======================================================End Section2==================================================== */
+
+/* =======================================================Section3==================================================== */
 
 .bg-img3 {
   background-image: url(./img/12.jpg);
@@ -284,6 +294,10 @@ nav {
 .our-service-icons-img {
   padding-bottom: 15px;
 }
+/* =======================================================End Section3==================================================== */
+
+/* =======================================================Section4==================================================== */
+
 .pricing {
   display: flex;
   justify-content: center;
@@ -318,6 +332,10 @@ tr > td {
 .table-section {
   padding-bottom: 100px;
 }
+/* =======================================================End Section4==================================================== */
+
+/* =======================================================Section5==================================================== */
+
 .dento-btn i {
   font-size: 10px;
 }
@@ -337,7 +355,9 @@ tr > td {
   padding: 30px;
   height: 120px;
 }
+/* =======================================================End Section5==================================================== */
 
+/* =======================================================Section6==================================================== */
 .blueLine {
   display: inline-block;
   width: 70px;
@@ -387,7 +407,9 @@ tr > td {
   padding: 0;
   padding: 10px;
 }
+/* =======================================================End Section6==================================================== */
 
+/* =======================================================Section7==================================================== */
 .backPhoto {
   position: absolute;
   top: 0px;
@@ -412,6 +434,11 @@ tr > td {
   /* height: 800px; */
   z-index: 999;
 }
+
+/* =======================================================End Section7==================================================== */
+
+/* =======================================================Section8==================================================== */
+
 .thirdSection a {
   text-decoration: none;
   color: black;
@@ -444,6 +471,10 @@ tr > td {
 .footer-openhours {
   line-height: 8vh;
 }
+/* =======================================================End Section8==================================================== */
+
+/* =======================================================Section9==================================================== */
+
 .bg-imgFooter {
   background-image: url(./img/3.jpg);
   background-position: center center;
@@ -492,43 +523,7 @@ footer p {
 form button:hover {
   background-color: brown;
 }
-
-@media screen and (max-width: 767.5px) {
-  .header span {
-    display: none;
-  }
-  #navContainer {
-    flex-wrap: nowrap !important;
-  }
-  .bg-img h2 {
-    font-size: 25px;
-  }
-  .bg-img p {
-    font-size: 16px;
-  }
-  .div-img {
-    padding-bottom: 50px;
-    width: 100%;
-  }
-  .icon-section {
-    padding-bottom: 40px;
-  }
-  .counterplus {
-    font-size: 20px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .div-img {
-    width: 100%;
-  }
-}
-@media screen and (min-width: 991.5px) {
-  .sideMenu {
-    display: none !important;
-    width: 100%;
-  }
-}
+/* =======================================================End Section9==================================================== */
 
 /* =======================================================Youssef==================================================== */
 .bg-image {
@@ -579,3 +574,42 @@ ol a {
 }
 
 /* =======================================================Youssef==================================================== */
+
+/* =======================================================Media Query==================================================== */
+
+@media screen and (max-width: 767.5px) {
+  .header span {
+    display: none;
+  }
+  #navContainer {
+    flex-wrap: nowrap !important;
+  }
+  .bg-img h2 {
+    font-size: 25px;
+  }
+  .bg-img p {
+    font-size: 16px;
+  }
+  .div-img {
+    padding-bottom: 50px;
+    width: 100%;
+  }
+  .icon-section {
+    padding-bottom: 40px;
+  }
+  .counterplus {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .div-img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 991.5px) {
+  .sideMenu {
+    display: none !important;
+    width: 100%;
+  }
+}

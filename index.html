@@ -36,7 +36,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body onscroll="appendClass()">
+  <body onscroll="appendClass()" onload="move()">
     <div class="headerSection">
       <div class="container topHeader">
         <div class="row">
@@ -86,9 +86,7 @@
             style="--bs-scroll-height: 100px"
           >
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >HOME</a
-              >
+              <a class="nav-link active" aria-current="page" href="#">HOME</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle active page" href="#">PAGES</a>
@@ -102,16 +100,22 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">ABOUT</a>
+              <a class="nav-link active" href="##" onclick="goTo(this)"
+                >ABOUT</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">SERVICE</a>
+              <a class="nav-link active" href="##" onclick="goTo(this)"
+                >SERVICE</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">PRICING</a>
+              <a class="nav-link active" href="##" onclick="goTo(this)"
+                >PRICING</a
+              >
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle active blog" href="#">BLOG</a>
+              <a class="nav-link dropdown-toggle active blog" href="##">BLOG</a>
               <ul class="dropdown-menu ulInBlog">
                 <li><a class="dropdown-item" href="Blog.html">Blog</a></li>
               </ul>
@@ -149,12 +153,10 @@
           style="--bs-scroll-height: inherit"
         >
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html"
-              >HOME</a
-            >
+            <a class="nav-link active" aria-current="page" href="#">HOME</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active page" href="#">PAGES</a>
+            <a class="nav-link dropdown-toggle active page" href="##">PAGES</a>
             <ul class="dropdown-menu ulInPage">
               <li><a class="dropdown-item" href="#">Action</a></li>
               <li>
@@ -167,16 +169,20 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">ABOUT</a>
+            <a class="nav-link active" href="##" onclick="goTo(this)">ABOUT</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">SERVICE</a>
+            <a class="nav-link active" href="##" onclick="goTo(this)"
+              >SERVICE</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">PRICING</a>
+            <a class="nav-link active" href="##" onclick="goTo(this)"
+              >PRICING</a
+            >
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active blog" href="#">BLOG</a>
+            <a class="nav-link dropdown-toggle active blog" href="##">BLOG</a>
             <ul class="dropdown-menu ulInBlog">
               <li><a class="dropdown-item" href="Blog.html">Blog</a></li>
             </ul>
@@ -402,7 +408,6 @@
       <div class="container">
         <div class="row">
           <div class="background-div"></div>
-
           <div class="col-12 col-sm-12 col-md-6">
             <div class="our-service">
               <h1>Our Service</h1>
@@ -1041,7 +1046,7 @@
             <div class="copyrit">
               <p class="text-center align-items-end">
                 Copyright ©2023 All rights reserved | This template is made with
-                <i class="fa-regular fa-heart"></i> by Colorlib
+                <i class="fa-regular fa-heart"></i> Our Team
               </p>
             </div>
           </div>
@@ -1055,6 +1060,18 @@
       currentTime.setHours(currentTime.getHours() + 2);
       date.min = currentTime.toISOString().substring(0, 16);
       date.value = currentTime.toISOString().substring(0, 16);
+
+      function goTo(section) {
+        console.log(section);
+        console.log(section.innerText.toLowerCase());
+        if (section.innerText.toLowerCase() == "about") {
+          scrollTo(0, 600);
+        } else if (section.innerText.toLowerCase() == "service") {
+          scrollTo(0, 1500);
+        } else if (section.innerText.toLowerCase() == "pricing") {
+          scrollTo(0, 2150);
+        }
+      }
     </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
