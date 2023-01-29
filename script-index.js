@@ -2,13 +2,13 @@ const nav = document.querySelector("nav");
 const headerMainSpan = document.querySelector(".headerMainSpan");
 const headerToolTipSpan = document.querySelector(".headerMainSpan span");
 const headerMainSpanEmail = document.querySelector(".headerMainSpanEmail");
-const headerToolTipSpanEmail = document.querySelector(".headerMainSpanEmail span");
+const headerToolTipSpanEmail = document.querySelector(
+  ".headerMainSpanEmail span"
+);
 var sticky = nav.offsetTop;
 var navBtn = document.querySelector(".navBtn");
 var sideMenu = document.querySelector(".sideMenu");
 var cards = document.getElementsByClassName("section1");
-
-
 
 // const body = document.body;
 // console.log(body);
@@ -32,6 +32,13 @@ function appendClass() {
   }
 }
 
+function move() {
+  var a = document.createElement("a");
+  a.href = "##";
+  a.innerText = sessionStorage.getItem("section");
+  goTo(a);
+}
+
 // navBtn.addEventListener("click", () => {
 //   sideMenu.classList.toggle("showContainer");
 //   sideMenu.style.transition = "2s";
@@ -53,18 +60,18 @@ headerMainSpanEmail.addEventListener("mouseleave", () => {
   headerToolTipSpanEmail.style.display = "none";
 });
 
-
-
 for (let i = 0; i < cards.length; i++) {
   cards[i].addEventListener("mouseenter", (e) => {
-    document.querySelector(`#${cards[i].id} .socialMedia`).style.visibility = "visible";
+    document.querySelector(`#${cards[i].id} .socialMedia`).style.visibility =
+      "visible";
     document.querySelector(`#${cards[i].id} .socialMedia`).style.opacity = "1";
   });
 }
 
 for (let i = 0; i < cards.length; i++) {
   cards[i].addEventListener("mouseleave", (e) => {
-    document.querySelector(`#${cards[i].id} .socialMedia`).style.visibility = "hidden";
+    document.querySelector(`#${cards[i].id} .socialMedia`).style.visibility =
+      "hidden";
     document.querySelector(`#${cards[i].id} .socialMedia`).style.opacity = "0";
   });
 }

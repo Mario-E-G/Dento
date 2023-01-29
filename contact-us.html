@@ -103,16 +103,22 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">ABOUT</a>
+              <a class="nav-link active" href="#" onclick="goToSection(this)"
+                >ABOUT</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">SERVICE</a>
+              <a class="nav-link active" href="#" onclick="goToSection(this)"
+                >SERVICE</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">PRICING</a>
+              <a class="nav-link active" href="#" onclick="goToSection(this)"
+                >PRICING</a
+              >
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle active blog" href="#">BLOG</a>
+              <a class="nav-link dropdown-toggle active blog" href="##">BLOG</a>
               <ul class="dropdown-menu ulInBlog">
                 <li><a class="dropdown-item" href="Blog.html">Blog</a></li>
               </ul>
@@ -168,16 +174,22 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">ABOUT</a>
+            <a class="nav-link active" href="#" onclick="goToSection(this)"
+              >ABOUT</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">SERVICE</a>
+            <a class="nav-link active" href="#" onclick="goToSection(this)"
+              >SERVICE</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">PRICING</a>
+            <a class="nav-link active" href="#" onclick="goToSection(this)"
+              >PRICING</a
+            >
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active blog" href="#">BLOG</a>
+            <a class="nav-link dropdown-toggle active blog" href="##">BLOG</a>
             <ul class="dropdown-menu ulInBlog">
               <li><a class="dropdown-item" href="Blog.html">Blog</a></li>
             </ul>
@@ -457,7 +469,7 @@
             <div class="copyrit">
               <p class="text-center align-items-end">
                 Copyright ©2023 All rights reserved | This template is made with
-                <i class="fa-regular fa-heart"></i> by Colorlib
+                <i class="fa-regular fa-heart"></i> Our Team
               </p>
             </div>
           </div>
@@ -471,6 +483,11 @@
       currentTime.setHours(currentTime.getHours() + 2);
       date.min = currentTime.toISOString().substring(0, 16);
       date.value = currentTime.toISOString().substring(0, 16);
+
+      function goToSection(element) {
+        sessionStorage.setItem("section", element.innerText);
+        window.location.href = "index.html";
+      }
     </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
