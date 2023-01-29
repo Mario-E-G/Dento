@@ -1,245 +1,111 @@
 * {
-    box-sizing: border-box;
-    font-family: "Inter", sans-serif;
-    font-family: "Roboto", sans-serif;
-  }
-  body{
-    overflow-x: hidden;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    font-size: 14px
-  }
-  .headerSection {
-    background-color: rgb(244, 244, 244);
-    padding: 10px;
-  }
-  body {
-    position: relative;
-  }
-  .counterplus{
-    font-size: 30px;
-  }
-  .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
-    font-size: 12px;
-  }
-  .sideMenu {
-    z-index: 999999999;
-    position: static;
-    display: none;
-    width: 75%;
-    font-size: 80px;
-    background-color: #fff;
-    border-radius: 10px;
-  }
-  .showContainer {
-    display: block;
-  }
-  .navBtn {
-    margin-left: 5px;
-  }
-  
-  .topIcons i {
-    color: rgb(112, 112, 112);
-    font-weight: 400;
-    font-size: 14px;
-    padding: 5px;
-  }
-  .topIcons i:hover {
-    color: rgb(0, 174, 239);
-  }
-  .dropdown-menu {
-    background-color: #00aeef !important;
-  }
-  .dropdown-menu li a {
-    color: #fff !important;
-  }
-  .ulNav li a:hover {
-    color: rgb(0, 174, 239) !important;
-  }
-  .dropdown-menu li a:hover {
-    background-color: rgba(52, 62, 92, 0.9) !important;
-  }
-  .header a {
-    padding: 5px;
-    text-align: center;
-    color: #707070;
-    text-decoration: none;
-    margin-right: 5px;
-  }
-  
-  .header a:hover {
-    color: #707070;
-  }
-  .nav-item {
-    color: #232323 !important;
-    padding: 0 15px;
-    font-weight: 600;
-    font-size: 14px;
-    text-transform: uppercase;
-  }
-  
-  .locationIcon i,
-  .envelopeIcon i {
-    color: rgb(0, 174, 239);
-  }
-  .dento-btn {
-    color: #fff !important;
-    font-weight: 600;
-    min-width: 140px;
-    height: 40px;
-    line-height: 36px;
-    font-size: 12px;
-    background-color: rgb(0, 174, 239) !important;
-    transition: all 1s !important;
-  }
-  
-  .dento-trans-btn {
-    color: rgb(0, 173, 238) !important;
-    font-weight: 600;
-    min-width: 140px;
-    height: 40px;
-    line-height: 36px;
-    font-size: 12px;
-    border: 1px solid rgb(0, 173, 238) !important;
-    background-color: transparent !important;
-  }
-  
-  .dento-btn:hover {
-    color: rgb(0, 173, 238) !important;
-    border: 1px solid rgb(0, 173, 238) !important;
-    background-color: transparent !important;
-  }
-  
-  nav {
-    background-color: #fff;
-    z-index: 999999;
-  }
-  
-  .sticky {
-    position: fixed !important;
-    top: 0;
-    width: 100%;
-  }
-  .headerMainSpan {
-    position: relative;
-  }
-  .tooltip-inner {
-    max-width: 200px !important;
-    padding: 0.25rem 0.5rem !important;
-    color: #fff !important;
-    text-align: center !important;
-    background-color: #000 !important;
-    border-radius: 0.25rem !important;
-    display: none;
-    position: absolute;
-    z-index: 1110000;
-  }
-
-
-  #blogDiv{
-    height: 100%;
-    text-align: center;
-    
-  }
-
-  
-   .bg-image {
-    background-image: url(img/12.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
-    position: relative;
-    opacity: 1;
-    height: 200px;
-    z-index: 1;
-  } 
-  .background-div {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    margin-left: 12px;
-    overflow: hidden;
-    background-color: rgba(52, 62, 92, 0.9);
-    z-index: -1;
-  }
-  
-
-  .blogtxt{
-    margin-top: 70px;
-    color: #fff;
-    font-weight: 600;
-    font-family: "Montserrat", sans-serif;
-    text-align: center;
-  }
-
-  
-#currlocation{
-    height: 81px;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
 }
 
-#Hicon{
-    font-size: 10px;
-}
-#bloglt,#blogrt,#bloglt1{
-        height: 400px;
+#blogDiv {
+  height: 100%;
+  text-align: center;
 }
 
-#bloglt{
-    align-items: center; 
-    display: flex; 
-    justify-content: space-around;
+.bg-image {
+  background-image: url(img/12.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  position: relative;
+  opacity: 1;
+  height: 200px;
+  z-index: 1;
+}
+.background-div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(52, 62, 92, 0.9);
+  z-index: -1;
 }
 
-#img1div{
-    width: 48%;
-     height: 90%; 
+.blogtxt {
+  margin-top: 70px;
+  color: #fff;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
 }
 
-#txt1div{
-    width: 40%;
-    height: 100%; 
-    margin-bottom:50px ;
+#currlocation {
+  height: 81px;
 }
 
-#search{
-    width: 85%; 
-    height: 45px;
-    border: 1px solid #ced4da;
-    border-radius: 0.25rem;
+#Hicon {
+  font-size: 10px;
+}
+#bloglt,
+#blogrt,
+#bloglt1 {
+  height: 400px;
 }
 
-li{
-    list-style: none;
-    height: 30px;
-    margin-top: 25px;
-}
-#ctg{
-    margin-bottom: 5px;
-    margin-left: 28px;
+#bloglt {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
 }
 
-#newsBigDiv{
-    height: 100%;
+#img1div {
+  width: 48%;
+  height: 90%;
 }
 
+#txt1div {
+  width: 40%;
+  height: 100%;
+  margin-bottom: 50px;
+}
 
+#search {
+  width: 85%;
+  height: 45px;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+#blogrt li {
+  list-style: none;
+  height: 30px;
+  margin-top: 25px;
+}
+#ctg {
+  margin-bottom: 5px;
+  margin-left: 28px;
+}
+
+#newsBigDiv {
+  height: 100%;
+}
 
 @media screen and (max-width: 767.5px) {
-    #bloglt{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around; 
-        height: 800px;
-    }
-    #img1div , #txt1div{
-        height: 30%;
-        width: 100%;
-    }
+  #bloglt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 800px;
+  }
+  #img1div,
+  #txt1div {
+    height: 30%;
+    width: 100%;
+  }
 }
 
 .footer-icons {
