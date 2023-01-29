@@ -403,6 +403,13 @@ tr > td {
 
 .card-style {
   margin-bottom: 100px;
+  width: auto !important;
+  padding: 0;
+  padding: 10px;
+}
+
+.card-style2 {
+  margin-bottom: 100px;
   width: auto;
   padding: 0;
   padding: 10px;
